@@ -1,0 +1,35 @@
+﻿<Window x:Class="BindingExamples.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BindingExamples"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button 
+                HorizontalAlignment="Left" Margin="443,332,0,0" 
+                VerticalAlignment="Top" 
+                Height="91" Width="347" 
+                Click="Button_Click">
+            <StackPanel>
+                <Label>
+                    Press for Employee Pop-Up Window</Label>
+                <Label>Employeeview</Label>
+                <Label>Static Binding to XAML object</Label>
+            </StackPanel>
+        </Button>
+        <Button 
+            HorizontalAlignment="Left" Margin="443,236,0,0" 
+            VerticalAlignment="Top" 
+            Height="91" Width="347" 
+            Click="Button_Click2">
+            <StackPanel>
+                <Label Content="Clipped window pop up"/>
+                <Label Content="ClippedWindow1"/>
+                <Label Content="Need to Add:   Binding to XAML object"/>
+            </StackPanel>
+        </Button>
+
+    </Grid>
+</Window>

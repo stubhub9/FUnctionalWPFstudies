@@ -34,6 +34,7 @@ namespace BindingExamples
             ownedWindow.Show ();
         }
 
+
         private void Button_Click2 ( object sender, RoutedEventArgs e )
         {
 
@@ -42,13 +43,23 @@ namespace BindingExamples
             ownedWindow.Show ();
         }
 
-        //private void Button_Click2Close ( object sender, RoutedEventArgs e )
-        //{
-        //    this.Close ();
+        private void Button_Click3 ( object sender, RoutedEventArgs e )
+        {
 
-        //    //var ownedWindow = new ClippedWindow1 ();
-        //    //ownedWindow.Owner = this;
-        //    //ownedWindow.Show ();
-        //}
+            var ownedWindow = new DrawingWindow ();
+            ownedWindow.Owner = this;
+            ownedWindow.Show ();
+        }
+
+        private void Button_Click4 ( object sender, RoutedEventArgs e )
+        {
+
+            var ownedWindow = new SplashXamlWindow ();
+            ownedWindow.Owner = this;
+            ownedWindow.Show ();
+        }
+
+
+
     }
 }

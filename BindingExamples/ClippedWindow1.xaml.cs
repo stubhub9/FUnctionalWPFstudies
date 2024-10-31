@@ -24,10 +24,7 @@ namespace BindingExamples
             InitializeComponent();
         }
 
-        //private void Button_Click2Close ( object sender, RoutedEventArgs e )
-        //{
 
-        //}
         private void Button_Click2Close ( object sender, RoutedEventArgs e )
         {
             this.Close ();
@@ -35,6 +32,51 @@ namespace BindingExamples
             //var ownedWindow = new ClippedWindow1 ();
             //ownedWindow.Owner = this;
             //ownedWindow.Show ();
+        }
+
+
+        //private void Button_Click3OnHover ( object sender, RoutedEventArgs e )
+        //{
+        //    var _button = sender;
+
+        //    SolidColorBrush _hoverBrush = new SolidColorBrush
+        //        ( Color.FromArgb ( 120, 255, 0, 0 ) );
+
+
+
+        //    //          _button.
+        //}
+
+        //private void IsMouseDirectlyOverChanged ( object sender, DependencyPropertyChangedEventArgs e )
+        //{
+        //    //  Generated from XAML Event toolbox
+
+        //    //Button closeButton = e.Source as Button;
+        //    Button closeButton = sender as Button;
+
+        //    closeButton.Background = 
+        //        new SolidColorBrush ( Color.FromArgb ( 120, 255, 0, 0 ) );
+
+
+        //}
+
+        private void Button_Click3OnHover ( object sender, DependencyPropertyChangedEventArgs e )
+        {
+            var _button = (Button)  sender;
+            _button.Background =
+                new SolidColorBrush ( Color.FromArgb ( 120, 255, 0, 0 ) );
+
+
+
+        }
+
+        private void MouseEnterCloseButton ( object sender, MouseEventArgs e )
+        {
+            var _button = (Button)sender;
+            _button.Background =
+                new SolidColorBrush ( Color.FromArgb ( 120, 255, 0, 0 ) );
+
+
         }
     }
 }

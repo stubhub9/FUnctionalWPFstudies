@@ -10,12 +10,51 @@
         SizeToContent="WidthAndHeight"
         WindowStyle="None"
         AllowsTransparency="True"
-        Background="Transparent">
+        Background="Transparent" >
         <!--
                 Learn  .NET  Windows Presentation Foundation 
                 Overview of WPF windows (WPF .NET)
                 Article  02/08/2022  1 contributor
+
+                docs-desktop/dotnet-desktop-guide/net/wpf/data/snippets
+                /how-to-create-a-simple-binding/vb
+                /EmployeeView.xaml
+
+
+    ATTEMPT AT:  Setting Button Background on Hover
+                
+//TODO:  A STYLE REFRESHER
+
+
+    <Window.Resources>
+    
+    <Style TargetType="{x:Type Button}">
+        <Setter Property="Background" Value="Red"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}" 
+                BorderBrush="Red" BorderThickness="2">
+                        <ContentPresenter HorizontalAlignment="Center"
+                VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="Red"/>
+                </Trigger>
+        </Style.Triggers>
+
+    </Style>
+
+    </Window.Resources>
+
+    
         -->
+
 
     <Grid Margin="20">
         <Grid.RowDefinitions>
@@ -48,15 +87,29 @@
             Margin="5,5,50,5"/>
 
 
+    <!--
+        Content is a unicode Big Red X glyph; 
+
+        Added Click2Close; almost always works, r.e.:
+                ==> Having problems with:
+                Changing Background of sender as Button
+                { Maybe GetName from sender, access GetName }
+    -->
         <Button Name="closeClippedWindow"  
             Background="Transparent"
             BorderBrush="{x:Null}"
             Foreground="Red"
             FontSize="15"
             Content="&#x274C;"
-            HorizontalAlignment="Right" VerticalAlignment="Top" Click="Button_Click2Close"/>
+            HorizontalAlignment="Right" 
+            VerticalAlignment="Top" 
+            Click="Button_Click2Close" MouseEnter="MouseEnterCloseButton" 
+            />
         
-        
+        <!--
+TODO:   OnHover HOW?
+        IsMouseDirectlyOverChanged="Button_Click3OnHover"      
+        -->
         
         
         

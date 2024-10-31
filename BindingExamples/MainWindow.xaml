@@ -16,20 +16,50 @@
                 <Label>
                     Press for Employee Pop-Up Window</Label>
                 <Label>Employeeview</Label>
-                <Label>Static Binding to XAML object</Label>
+                <Label Content="Static Binding to XAML object ?Dynamic available?"/>
             </StackPanel>
         </Button>
+
+
         <Button 
             HorizontalAlignment="Left" Margin="443,236,0,0" 
             VerticalAlignment="Top" 
             Height="91" Width="347" 
             Click="Button_Click2">
             <StackPanel>
-                <Label Content="Clipped window pop up"/>
-                <Label Content="ClippedWindow1"/>
-                <Label Content="Need to Add:   Binding to XAML object"/>
+                <Label Content="Clipped, styled window pop up"/>
+                <Label Content="After OnMouseEnter pink except hover blue "/>
+                <Label Content="TODO  Add Binding, sender onHover override"/>
             </StackPanel>
         </Button>
 
-    </Grid>
+
+		<Button 
+			HorizontalAlignment="Left" Margin="443,140,0,0" 
+			VerticalAlignment="Top" 
+			Height="91" Width="347" 
+			Click="Button_Click3">
+			<StackPanel>
+				<Label Content="Group Geometry"/>
+				<Label Content="Drawing Ellipse, and stuff
+                "/>
+				<Label Content="TODO  Add Binding?"/>
+			</StackPanel>
+		</Button>
+
+
+		<Button 
+			HorizontalAlignment="Left" Margin="443,40,0,0" 
+			VerticalAlignment="Top" 
+			Height="91" Width="347" 
+			Click="Button_Click4">
+			<StackPanel>
+				<Label Content="On XAML Window.Loaded"/>
+				<Label Content="Rebuild the window in the code behind.
+                "/>
+				<Label Content="TODO  Add Binding?"/>
+			</StackPanel>
+		</Button>
+
+	</Grid>
 </Window>

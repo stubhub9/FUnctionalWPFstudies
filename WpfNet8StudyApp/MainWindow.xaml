@@ -1,0 +1,59 @@
+﻿<Window x:Class="WpfNet8StudyApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfNet8StudyApp"
+        mc:Ignorable="d"
+        Title="Names" Height="180" Width="260">
+
+    <!--
+             Tutorial: Create a new WPF app with .NET
+        Article 07/05/2023 3 contributors
+
+                learn.microsoft.com/en-us/dotnet/desktop/wpf
+                /get-started/create-app-visual-studio
+        -->
+
+
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <!--
+        <Label Grid.Column="1">Names</Label>
+        -->
+
+        <Label >Names</Label>
+
+
+   <!--
+       Once a control is named, it can be referenced in the code-behind. 
+       The name is assigned to the control with the x:Name attribute
+
+       Margin is of TYPE:  Thickness, expressed in double
+    -->
+        <ListBox x:Name="lstNames"
+        Grid.Row="1" />
+
+
+        <StackPanel Margin="5,0,0,0"
+        Grid.Row="1" Grid.Column="1">
+
+            <TextBox x:Name="txtName" />
+
+            <Button x:Name="btnAdd" Margin="0,5,0,0" 
+            Click="ButtonAddName_Click">
+            Add Name</Button>
+
+        </StackPanel>
+
+
+    </Grid>
+</Window>

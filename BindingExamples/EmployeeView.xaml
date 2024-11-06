@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BindingExamples"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
         Title="" Height="250" Width="300">
     <Window.Resources>
         <local:Employee1 x:Key="EmployeeExample" 

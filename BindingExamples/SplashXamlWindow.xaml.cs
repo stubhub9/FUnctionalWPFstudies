@@ -64,6 +64,22 @@ namespace BindingExamples
 
                                 mainWindow.Title = "and now done";
 
+
+
+                ********************
+                *
+                *Method 3: The .NET 4.5 way, use async/await
+
+        // we need to add the async keyword to the method signature
+        public async void TheEnclosingMethod()
+        {
+            tbkLabel.Text = "two seconds delay";
+
+           await Task.Delay(2000);
+           var page = new Page2();
+          page.Show();
+            }
+
                 */
 
 

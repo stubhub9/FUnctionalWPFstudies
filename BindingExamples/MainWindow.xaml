@@ -54,10 +54,10 @@
 			Height="91" Width="347" 
 			Click="Button_Click4">
 			<StackPanel>
-				<Label Content="On XAML Window.Loaded"/>
-				<Label Content="Rebuild the window in the code behind.
+				<Label Content="On XAML Window.Loaded; Timers start"/>
+				<Label Content="Rebuild the pop-up Window's Content in the code behind.
                 "/>
-				<Label Content="TODO  Add Binding?"/>
+				<Label Content="Uses Canvas, Timers, MainWindow.Content swaps"/>
 			</StackPanel>
 		</Button>
 

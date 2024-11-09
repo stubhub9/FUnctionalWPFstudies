@@ -61,5 +61,20 @@
 			</StackPanel>
 		</Button>
 
+
+
+		<Button 
+                HorizontalAlignment="Left" Margin="10,332,0,0" 
+                VerticalAlignment="Top" 
+                Height="91" Width="347" 
+                Click="Button_Click5">
+			<StackPanel>
+				<Label>
+					Press for Employee Pop-Up Window</Label>
+				<Label>Employeeview</Label>
+				<Label Content="Static Binding to XAML object ?Dynamic available?"/>
+			</StackPanel>
+		</Button>
+
 	</Grid>
 </Window>

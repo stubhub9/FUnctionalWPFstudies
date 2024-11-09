@@ -59,6 +59,14 @@ namespace BindingExamples
             ownedWindow.Show ();
         }
 
+        private void Button_Click5 ( object sender, RoutedEventArgs e )
+        {
+
+            var ownedWindow = new PathAnimations ();
+            ownedWindow.Owner = this;
+            ownedWindow.Show ();
+        }
+
 
 
     }
